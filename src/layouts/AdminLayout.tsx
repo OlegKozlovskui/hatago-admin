@@ -10,6 +10,7 @@ const navItems = [
   { to: '/users', label: 'Users' },
   { to: '/properties', label: 'Properties' },
   { to: '/owners', label: 'Owners' },
+  { to: '/amenities', label: 'Amenities' },
 ];
 
 export default function AdminLayout({ children }: Props) {
