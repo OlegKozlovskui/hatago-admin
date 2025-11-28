@@ -4,6 +4,7 @@ import LoginPage from './pages/LoginPage';
 import AdminLayout from './layouts/AdminLayout';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import AdminAmenitiesPage from './pages/AmenitiesPage.tsx';
+import RegionsPage from './pages/RegionsPage.tsx';
 
 const queryClient = new QueryClient();
 
@@ -19,6 +20,15 @@ function App() {
           element={
             <AdminLayout>
               <DashboardPage />
+            </AdminLayout>
+          }
+        />
+
+        <Route
+          path="/regions"
+          element={
+            <AdminLayout>
+              <RegionsPage />
             </AdminLayout>
           }
         />

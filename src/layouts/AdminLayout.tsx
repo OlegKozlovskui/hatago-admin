@@ -10,6 +10,7 @@ const navItems = [
   { to: '/users', label: 'Users' },
   { to: '/properties', label: 'Properties' },
   { to: '/owners', label: 'Owners' },
+  { to: '/regions', label: 'Regions' },
   { to: '/amenities', label: 'Amenities' },
 ];
 
