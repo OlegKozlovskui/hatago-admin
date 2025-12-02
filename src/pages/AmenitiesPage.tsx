@@ -76,11 +76,7 @@ export default function AdminAmenitiesPage() {
   async function handleDelete(id: string) {
     const ok = window.confirm('Ви впевнені, що хочете видалити цю зручність?');
     if (!ok) return;
-    try {
-      await deleteMutation.mutateAsync(id);
-    } catch (e: never) {
-      alert(e?.message || 'Помилка при видаленні');
-    }
+    await deleteMutation.mutateAsync(id);
   }
 
   async function handleSubmit(e: React.FormEvent) {
