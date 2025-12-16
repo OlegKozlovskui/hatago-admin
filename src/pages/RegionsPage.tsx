@@ -79,7 +79,8 @@ const emptyForm: RegionFormState = {
   ctaStats: [],
 };
 
-const IMAGE_BASE_URL = 'http://localhost:3000/static'; // підкоригуєш під себе
+const API_URL = import.meta.env.VITE_API_URL;
+const IMAGE_BASE_URL = `${API_URL}/static`; // підкоригуєш під себе
 
 export default function RegionsPage() {
   const [search, setSearch] = useState('');
