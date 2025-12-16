@@ -1,7 +1,7 @@
 // src/hooks/regions.ts
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 
-const API_URL = 'http://localhost:3000'; // TODO: .env
+const API_URL = import.meta.env.VITE_API_URL;
 
 export type RegionWhatToExpectItem = {
   title: string;
